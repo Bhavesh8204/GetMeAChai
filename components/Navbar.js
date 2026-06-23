@@ -1,7 +1,7 @@
 "use client";
-import React, { useState } from "react";
-import { useSession, signIn, signOut } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";
+import { useState } from "react";
 
 const Navbar = () => {
   const { data: session } = useSession();
@@ -18,14 +18,6 @@ const Navbar = () => {
           Get Me a Chai!
         </span>
       </Link>
-
-      {/* <ul className='flex justify-between gap-4'>
-        <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
-        <li>Sign Up</li>
-        <li>Login</li>
-      </ul> */}
 
       <div className="relative flex justify-center items-center  md:block gap-4">
         {session && (

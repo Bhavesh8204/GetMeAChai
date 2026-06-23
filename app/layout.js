@@ -1,14 +1,11 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import SessionWrapper from "@/components/SessionWrapper";
-
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
 
 export const metadata = {
-  title: "Get me A Chai - Fund your projects with chai",
-  description: "This website is a crowdfunding platform for creators.",
+  title: "Get me A Chai",
+  description: "This website is a crowdfunding platform.",
 };
 
 export default function RootLayout({ children }) {
