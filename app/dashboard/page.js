@@ -1,15 +1,11 @@
-
-import Dashboard from '@/components/Dashboard'
+import Dashboard from "@/components/Dashboard";
 
 const DashboardPage = () => {
-    return (
-        <Dashboard/>
-    )
-}
+  return <Dashboard />;
+};
 
-export default DashboardPage
+export default DashboardPage;
 
 export const metadata = {
-    title: "Dashboard - Get Me A Chai",
-  }
-   
+  title: "Dashboard - Get Me A Chai",
+};
